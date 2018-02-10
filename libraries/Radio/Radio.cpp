@@ -228,7 +228,7 @@ void Radio::send_data(int reads_to_be_sent){
       for(data_set=0;data_set<9;data_set++){
          for(j=0;j<44;j++) payload[j] = Reporter.SD_read();
          while(!send_bytes(payload,44));
-         wait_for(SUCCESS);
+         wait_for(SUCCESS_RADIO);
       }
    }
 }

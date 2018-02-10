@@ -21,7 +21,7 @@
 #define STOP 's'
 #define DATA 'd'
 #define SEND_DATA 'D'
-#define SUCCESS 'g'
+#define SUCCESS_RADIO 'g'
 
 
 class Radio {

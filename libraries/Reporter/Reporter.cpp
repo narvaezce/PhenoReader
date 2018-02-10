@@ -9,7 +9,7 @@ SdFat ReporterClass::sd;
 SdFile ReporterClass::PlateFile;
 SdFile ReporterClass::SentFile;
 
-#define error(x) sd.errorHalt_P(PSTR(x))
+#define error(x) sd.errorHalt(PSTR(x))
 
 char hex_digits[] = {'0','1','2','3','4','5','6','7',
                      '8','9','A','B','C','D','E','F'};
